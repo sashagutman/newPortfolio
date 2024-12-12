@@ -1,0 +1,50 @@
+.portfolio{
+    padding: clamp(5rem, 3.636rem + 6.82vw, 8.75rem) 0;
+    background-image: url(../images/header-background.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;   
+    position: relative; 
+}
+
+.portfolio::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 184, 166, 0.7);
+}
+
+
+.portfolio__inner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 10px;
+}
+
+.portfolio__title{
+    z-index: 3;
+    margin-bottom: 20px;
+}
+
+.portfolio__text{
+    max-width: 810px;
+    z-index: 3;
+
+}
+
+
+.skills{
+    padding: 20px 0;
+    box-shadow: 2px 2px 5px rgb(187, 187, 187);
+}
+
+
+.skills__list{
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+}

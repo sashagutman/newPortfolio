@@ -1,0 +1,131 @@
+.contacts{
+    background-color: #44A08D;
+    background-image: url(../images/contact_us.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding: clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem) 0;
+}
+
+
+
+.contacts__inner{
+    max-width: 500px;
+    margin-left: auto;
+    color: #1e1e1e;
+}
+
+.contacts__title{
+    font-size: clamp(1.563rem, 1.313rem + 1.25vw, 2.25rem) ;
+    margin-bottom: 20px;
+}
+
+.contacts__text{
+    font-size: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
+    margin-bottom: 40px;
+
+}
+
+.contacts__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input{
+    height: 50px;
+}
+
+.input::placeholder, .textarea::placeholder{
+    color: rgb(17 94 89);
+}
+
+.textarea{
+    height: 110px;
+}
+
+.input, .textarea {
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 20px 10px 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    background-color: white;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.input:focus, .textarea:focus {
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    background-position: 45px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+
+.input__name:focus{
+    background-image: url(../images/contacts/name.png);
+}
+
+.input__email:focus{
+    background-image: url(../images/contacts/eemail.png);
+}
+
+.input__phone:focus{
+    background-image: url(../images/contacts/phone.png);
+}
+
+.textarea__message:focus{
+    background-image: url(../images/contacts/imessage.png);
+    background-size: 45px 45px;
+
+}
+
+.input::placeholder, .textarea::placeholder {
+    transition: all 0.3s ease;
+}
+
+.input:focus::placeholder,
+.textarea:focus::placeholder{
+    font-size: 12px;
+    color: #333333;
+}
+
+.input__btn{
+    background-color: #ffffff;
+    width: 180px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid;
+    box-shadow: 7px 7px rgba(0, 0, 0);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.input__btn:hover, .input__btn:active{
+    box-shadow: none; 
+    transform: translateY(5px);
+}
+
+.input__btn:active {
+    transform: translateY(1px);
+  }
+
+/* form */
+.input.invalid::placeholder,
+  .textarea.invalid::placeholder {
+    color: rgb(244 63 94);
+    font-size: 14px;
+  }
+
+  .input.invalid, .textarea.invalid {
+    border-color: rgb(244 63 94);
+  }
+  /* form */
+
+
