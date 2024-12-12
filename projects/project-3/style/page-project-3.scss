@@ -1,0 +1,126 @@
+.project__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+    .project__img{
+        flex: 0 1 60%;        
+
+    }
+
+    .project__form{
+        display: block;
+        align-content: center;
+        padding: 0 clamp(3.125rem, -3.75rem + 10vw, 6.25rem);
+        flex: 0 1 40%;        
+        direction: rtl;
+
+        .form__content{
+            color: #020253;
+    
+            h3{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 130%;
+            }
+    
+            p{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .form{
+            color: #020253;
+
+            .form-group{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .label{
+                font-size: 18px;
+            }
+
+            .input{
+                height: 35px;
+                font-size: 16px;
+                color: #020253;
+                background-color: #E5EEFF;
+                border-bottom: 2px solid #020253;
+                margin-bottom: 25px;
+                outline: none;
+            }
+
+            .input-btn{
+                width: 150px;
+                height: 35px;
+                font-size: 18px;
+                font-weight: 600;
+                background-color: #020253;
+                color: #E5EEFF;
+                cursor: pointer;
+                transition: linear 0.3s;
+
+                &:hover{
+                    background-color:#33337b;
+                    transform: scale(0.9);
+                }
+
+            }
+
+        }
+        
+    }
+
+    @media(max-width: 1050px) {
+        .project__img{
+            flex: 0 1 50%;        
+    
+        }
+
+        .project__form{
+            flex: 0 1 50%;        
+    
+        }
+    }
+
+    @media(max-width: 800px) {
+        .project__img{
+            flex: 0 1 100%; 
+            margin-bottom: 50px;
+            
+            
+            img{
+                height: 300px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .project__form{
+            flex: 0 1 70%;   
+            margin: 0 auto;     
+    
+        }
+
+    }
+
+    @media(max-width: 650px) {
+        
+        .project__form{
+            flex: 0 1 100%;   
+            margin: 0 auto;     
+    
+        }
+
+        
+    }
+
+
+
+    
+}
+
+
+  
+

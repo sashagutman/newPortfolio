@@ -1,0 +1,89 @@
+.project__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project__wrapper .project__img {
+  flex: 0 1 60%;
+}
+.project__wrapper .project__form {
+  display: block;
+  align-content: center;
+  padding: 0 clamp(3.125rem, -3.75rem + 10vw, 6.25rem);
+  flex: 0 1 40%;
+  direction: rtl;
+}
+.project__wrapper .project__form .form__content {
+  color: #020253;
+}
+.project__wrapper .project__form .form__content h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 130%;
+}
+.project__wrapper .project__form .form__content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.project__wrapper .project__form .form {
+  color: #020253;
+}
+.project__wrapper .project__form .form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.project__wrapper .project__form .form .label {
+  font-size: 18px;
+}
+.project__wrapper .project__form .form .input {
+  height: 35px;
+  font-size: 16px;
+  color: #020253;
+  background-color: #E5EEFF;
+  border-bottom: 2px solid #020253;
+  margin-bottom: 25px;
+  outline: none;
+}
+.project__wrapper .project__form .form .input-btn {
+  width: 150px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #020253;
+  color: #E5EEFF;
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+.project__wrapper .project__form .form .input-btn:hover {
+  background-color: #33337b;
+  transform: scale(0.9);
+}
+@media (max-width: 1050px) {
+  .project__wrapper .project__img {
+    flex: 0 1 50%;
+  }
+  .project__wrapper .project__form {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 800px) {
+  .project__wrapper .project__img {
+    flex: 0 1 100%;
+    margin-bottom: 50px;
+  }
+  .project__wrapper .project__img img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .project__wrapper .project__form {
+    flex: 0 1 70%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 650px) {
+  .project__wrapper .project__form {
+    flex: 0 1 100%;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=page-project-3.css.map */

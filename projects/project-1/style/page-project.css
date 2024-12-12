@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    border: O;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+.project{
+    padding: 50px 0 200px 0;
+    background: linear-gradient(#281EFF, #2DFF8C);
+    font-family: "Varela Round", sans-serif;
+}
+
+.project__inner{
+    color: #fff;
+    max-width: 900px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project__content-title{
+    font-size: clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem)  ;
+    text-shadow: 0px 0px 16px #00000087;
+    line-height: 130%;
+    font-family: "Satisfy", cursive;
+
+}
+
+.project__content-subtitle{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: clamp(1.125rem, 0.807rem + 1.59vw, 2rem);
+}
+
+.project__content-text{
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.project__form{
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+
+.form__inner{
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    width: 100%;
+}
+
+.label{
+    display: block;
+    text-align: right;
+}
+
+.input-form{
+    width: 330px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(246, 246, 246, 0.14);
+    border: 2px solid rgba(255, 255, 255, 1);
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    padding-right: 10px;
+}
+
+.input__btn{
+    cursor: pointer;
+    /* max-width: 330px; */
+    /* width: 100%; */
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    transition: all 0.7s;
+    color: #000000;
+}
+
+.input__btn:hover{
+    background-color: #17161666;
+    color: #fff;
+}
+
+@media(max-width: 825px){
+    .project__form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input__btn{
+        max-width: 330px;
+        width: 100%;
+    }
+}

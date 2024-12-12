@@ -1,0 +1,95 @@
+
+.project__content{
+    text-align: center;
+    background-image: url(../images/Path\ 15.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: clamp(6.25rem, 2.802rem + 17.24vw, 12.5rem) 20px;
+}
+
+
+.project__content-title{
+    color: #D3E10E;
+    font-size: clamp(2.813rem, 2.098rem + 3.57vw, 5rem);
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 130%;
+}
+
+.project__content-text{
+    color: #F9F9F9;
+    font-size: clamp(1rem, 0.918rem + 0.41vw, 1.25rem);
+}
+
+
+.project__form{
+    direction: rtl;
+    padding: 50px 20px;
+}
+
+/* ======================= form =======================*/
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: clamp(0.625rem, -0.711rem + 3.45vw, 1.875rem);
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    width: 100%;
+
+
+}
+
+.input{
+    height: 40px;
+    background-color: #F6F6F6;
+    font-size: 18px;
+    color: #D3E10E;
+    padding-right: 10px;
+    border-bottom: 2px solid #D3E10E;
+}
+
+.input:focus{
+    outline: none
+}
+
+.input__btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #D3E10E;
+    font-size: 16px;
+    font-weight: 600;
+    transition: linear 0.4s;
+}
+
+.input__btn:hover{
+    /* background-color: #e3f306; */
+    background: linear-gradient(rgb(191, 241, 10), rgb(119, 203, 59));
+}
+
+ /* ========== media ==========   */
+@media (max-width: 860px){
+    .form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__group{
+        max-width: 530px;
+    }
+
+    .input__btn{
+       max-width: 530px;
+       width: 100%;
+       margin-top: 10px;
+    }
+}
+
