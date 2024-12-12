@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #267871;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.math-title{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(190 18 60);
+    color: rgb(226 232 240)
+}
+
+.math-wrapper{
+    max-width: 900px;
+    padding: 40px;
+    margin-left: auto;
+    background-color: rgb(237, 237, 237, 0.7);
+    position: relative;
+    z-index: 34;
+}
+
+.math-wrapper h3{
+    font-size: 28px;
+}
+
+/* settings */
+.settings_game{
+    padding: 40px 0;
+}
+
+.settings{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.settings_box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 250px;
+    width: 100%;
+    background-color: rgb(20 184 166);
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+.settings_box:hover{
+    background-color: rgb(45 212 191);
+}
+
+.settings_label{
+    font-size: 18px;
+}
+
+.settings_box select{
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+/* settings */
+
+.question{
+    padding: 40px 0;
+}
+
+.question_inner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
+    font-size: 25px;
+}
+
+.answer_input{
+    max-width: 150px;
+    font-size: 20px;
+}
+
+.btn{
+    padding: 5px 55px;
+    font-size: 20px;
+    background-color: rgb(20 184 166);
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 3px;
+}
+
+.btn:hover{
+    background-color: rgb(45 212 191);
+
+}
+
+/* result table */
+.result_table{
+    padding: 40px 0;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td{
+    border: 1px solid #686868;
+    padding: 10px;
+    text-align: center;
+    font-size: clamp(0.813rem, 0.653rem + 0.8vw, 1.25rem);
+}
+
+.table thead{
+    font-size: 18px;
+    background-color: rgb(248 250 252);
+    color: rgb(15 118 110);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(241 245 249);
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(203 213 225);
+}
+
+
+/* numbers */
+.square {
+    position: absolute;
+    top: -100px;
+    animation: boxes 8s infinite ease-in-out;
+    font-size: 30px;
+    background-color: rgba(218, 218, 218, 0.3);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes boxes {
+    0% {
+        top: -100px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+}
+
+.square:nth-child(1) {
+    width: 75px;
+    height: 75px;
+    left: 7%;
+}
+
+.square:nth-child(2) {
+    width: 65px;
+    height: 65px;
+    left: 15%;
+    animation-delay: 4s;
+}
+
+.square:nth-child(3) {
+    width: 82px;
+    height: 82px;
+    left: 45%;
+    animation-delay: 8s;
+}
+
+.square:nth-child(4) {
+    width: 70px;
+    height: 70px;
+    left: 55%;
+    animation-delay: 2s;
+}
+
+.square:nth-child(5) {
+    width: 60px;
+    height: 60px;
+    left: 27%;
+    animation-delay: 6s;
+}
+
+.square:nth-child(6) {
+    width: 55px;
+    height: 55px;
+    left: 60%;
+    animation-delay: 4s;
+}
+
+.square:nth-child(7) {
+    width: 90px;
+    height: 90px;
+    left: 85%;
+    animation-delay: 9s;
+}
+
+.square:nth-child(8) {
+    width: 70px;
+    height: 70px;
+    left: 75%;
+    animation-delay: 4s;
+}
+
+.square:nth-child(9) {
+    width: 45px;
+    height: 45px;
+    left: 10%;
+    animation-delay: 7s;
+}
+
+.square:nth-child(10) {
+    width: 55px;
+    height: 55px;
+    left: 60%;
+    animation-delay: 7s;
+}
+
+.square:nth-child(11) {
+    width: 55px;
+    height: 55px;
+    left: 50%;
+    animation-delay: 7s;
+}
+
+.square:nth-child(12) {
+    width: 55px;
+    height: 55px;
+    left: 80%;
+    animation-delay: 7s;
+}
+
+.square:nth-child(13) {
+    width: 55px;
+    height: 55px;
+    left: 40%;
+    animation-delay: 3s;
+}
+
+.square:nth-child(14) {
+    width: 55px;
+    height: 55px;
+    left: 90%;
+    animation-delay: 3s;
+}
+/* numbers */
+
+@media (max-width: 400px) {
+    .question_inner {
+        justify-content: center;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .answer_input{
+        height: 45px;
+    }
+}
+
