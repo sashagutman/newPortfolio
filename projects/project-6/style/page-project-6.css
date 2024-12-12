@@ -1,0 +1,163 @@
+.project__wrapper {
+  position: relative;
+}
+.project__wrapper::after, .project__wrapper::before {
+  content: "";
+  position: absolute;
+  width: clamp(9.375rem, 2.557rem + 34.09vw, 28.125rem);
+  height: 15px;
+  background-color: #FDBD03;
+}
+.project__wrapper::before {
+  bottom: 0;
+  left: 0;
+  width: 700px;
+}
+.project__wrapper::after {
+  top: 0;
+  right: 0;
+}
+.project__wrapper .project__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+@media (max-width: 850px) {
+  .project__wrapper .project__container {
+    flex-direction: column;
+  }
+}
+.project__wrapper .project__container .project__form {
+  padding: 0 10px;
+  flex: 0 1 65%;
+}
+@media (max-width: 850px) {
+  .project__wrapper .project__container .project__form {
+    order: 1;
+  }
+}
+.project__wrapper .project__container .project__form h2 {
+  font-size: 50px;
+  color: #FDBD03;
+  line-height: 130%;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.project__wrapper .project__container .project__form p {
+  color: #020253;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.project__wrapper .project__container .project__form .form {
+  display: flex;
+  flex-direction: column;
+}
+.project__wrapper .project__container .project__form .form .form__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+@media (max-width: 850px) {
+  .project__wrapper .project__container .project__form .form .form__row {
+    flex-direction: column;
+  }
+}
+.project__wrapper .project__container .project__form .form .form__row .form__group {
+  width: 100%;
+}
+.project__wrapper .project__container .project__form .form label {
+  display: block;
+}
+.project__wrapper .project__container .project__form .form .input {
+  background-color: #E5EEFF;
+  width: 100%;
+  height: 35px;
+  border-bottom: 3px solid #FDBD03;
+  font-size: 16px;
+  padding-right: 10px;
+}
+.project__wrapper .project__container .project__form .form .input:focus {
+  outline: none;
+}
+.project__wrapper .project__container .project__form .form .textarea-group {
+  margin-top: 20px;
+}
+.project__wrapper .project__container .project__form .form .textarea-group .textarea {
+  width: 100%;
+  height: 120px;
+  border: none;
+  border-bottom: 3px solid #FDBD03;
+  background-color: #E5EEFF;
+}
+.project__wrapper .project__container .project__form .form .textarea-group .textarea:focus {
+  outline: none;
+  font-size: 16px;
+  padding-right: 5px;
+}
+.project__wrapper .project__container .project__form .form .form__btn {
+  margin-top: 50px;
+  width: 140px;
+  height: 35px;
+  background-color: #FDBD03;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.project__wrapper .project__container .project__form .form .form__btn:hover {
+  background-color: #ffaa64;
+  color: #ffffff;
+}
+@media (max-width: 850px) {
+  .project__wrapper .project__container .project__form .form .form__btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .project__wrapper .project__container .project__img img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+.project__wrapper .project__social {
+  padding: 60px 20px 60px 20px;
+}
+.project__wrapper .project__social .project__social-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media (max-width: 850px) {
+  .project__wrapper .project__social .project__social-list {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+.project__wrapper .project__social .project__social-list .item-up {
+  position: absolute;
+  top: 50px;
+}
+@media (max-width: 850px) {
+  .project__wrapper .project__social .project__social-list .item-up {
+    position: initial;
+  }
+}
+.project__wrapper .project__social .project__social-list .project__social-item {
+  padding: 15px;
+  background-color: #FDBD03;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  transition: linear 0.2s;
+}
+.project__wrapper .project__social .project__social-list .project__social-item:hover {
+  transform: scale(1.2);
+  background-color: #ffaa64;
+}
+.project__wrapper .project__social .project__social-list .project__social-item .project__social-link img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=page-project-6.css.map */
