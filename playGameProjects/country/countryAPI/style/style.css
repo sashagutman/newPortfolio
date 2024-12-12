@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 30px 20px;
+}
+
+body{
+    background-color: rgb(51, 60, 88);
+    color: rgb(250, 250, 250);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffaa22;
+    padding: 10px 0;
+}
+
+.title{
+    font-size: 24px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.span-title{
+    color: silver;
+    font-size: 22px;
+    font-weight: normal;
+    max-width: 300px;
+}
+
+.title-center{
+    text-align: center;
+    font-size: 34px;
+}
+
+.info-inner{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.form-control{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    border: 0.5px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.label-country{
+    font-size: 24px;
+    text-align: center;
+}
+
+.input-country{
+    height: 40px;
+    font-size: 25px;
+    padding: 5px;
+    transition: all 0.5s;  
+    color: rgb(51, 60, 88);  
+}
+
+.input-country::placeholder{
+    transition: all 0.5s;
+}
+
+.input-country:focus::placeholder{
+    font-size: 16px;
+}
+
+.btn{
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 5px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 24px;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.btn:hover{
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+
+.btn:active{
+    position:relative;
+	top:1px;
+}
+
+.country-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-center{
+    text-align: center;
+}
+
+.flag-center img{
+    max-width: 300px;
+    width: 100%;
+}

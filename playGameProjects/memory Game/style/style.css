@@ -1,0 +1,59 @@
+*, *::after,
+*::before,
+h1, h2, h3, h4{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: O;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    line-height: 130%;
+    position: relative;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+.title{
+    font-size: clamp(2.875rem, 2.102rem + 3.86vw, 5rem);
+    font-weight: 800;
+    line-height: 130%;
+    text-align: center;
+}
+
+.text{
+    line-height: 130%;
+    font-weight: 300;
+    font-size: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
+    text-align: center;
+}
+
+.link{
+    cursor: pointer;
+    background-color: #1AE0EC;
+
+}

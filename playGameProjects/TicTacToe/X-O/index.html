@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game X-O</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css/game.xo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game_inner">
+            <h1 class="game_title">
+                איקס עיגול
+            </h1>
+            <p class="game_text">
+                איקס עיגול הוא משחק לוח קלאסי שבו השחקנים מתחרים על ידי הצבת איקסים ועיגולים על לוח בגודל 3x3. המנצח הוא זה
+                שמצליח ראשון למקם את הסמלים שלו בשורה אחת — אופקית, אנכית או באלכסון.
+            </p>
+            
+            
+            <div dir="rtl" class="game_move">התור של:
+                <span class="game_who" id="spanWho"></span>
+            </div>
+    
+            <div class="block_area" id="blockArea">
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+                <div class="block_item"></div>
+            </div>
+            <div class="block_winner" id="blockWinner">
+                <div dir="rtl" class="text_win">מנצח:<span id="spanWin"></span></div>
+                <div class="btn_reset" id="btnNewGame">New Game</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js/game.xo.js"></script>
+</body>
+</html>

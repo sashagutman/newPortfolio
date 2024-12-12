@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css/shopList.css">
+</head>
+<body dir="rtl">
+    <div class="container">
+
+        <div class="shoplist__inner">
+
+            <h2 class="shopList__title">
+                רשימת מסישימות
+                <span class="shopList__icon"><i class="fa-sharp fa-regular fa-rectangle-list"></i></span>
+            </h2>
+
+            <p class="shopList__text">
+                אפליקציית "רשימת משימות" היא כלי יעיל ונוח לניהול משימות יומיומיות. היא מאפשרת למשתמשים ליצור, לערוך ולסמן משימות שבוצעו בקלות, תוך שמירה על סדר וארגון. בעזרת האפליקציה, ניתן לנהל את הזמן בצורה חכמה ולוודא שכל המטלות החשובות מבוצעות בצורה יעילה ומהירה.
+            </p>
+
+            <form class="shopList__form" id="form">
+                <label class="label" for="taskInput">הוסף משימה חדשה</label>
+                <div class="input-container">
+                    <input id="taskInput" class="input" type="text">
+                    <div class="popup" id="popup">
+                        <span class="popup-message"></span>
+                        <div class="popup-arrow"></div>
+                    </div>
+                </div>
+                <button id="button" class="shopList__btn">הוספה</button>
+            </form>
+            <div class="popup">
+                <span class="popup-message"></span>
+            </div>
+
+            <p id="emptyList" class="empty-list">רשימת משימות ריקה
+                <img src="./img/note-2.png" alt="">
+            </p>
+
+            <ul class="task-lists" id="taskLists">
+                <!-- <li class="task-list">
+                    <span class="task-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, in!</span>
+                        <div class="task-item__buttons">
+                            <button type="button" data-action="done" class="form-btn">
+                                <i class="bi bi-check-square"></i>
+                            </button>
+                                <button type="button" data-action="delete" class="form-btn">
+                                <i class="bi bi-trash3"></i>
+                            </button>
+                        </div>
+                </li> -->
+            </ul>
+        
+        </div>
+    </div>
+
+
+    <script src="./main.js/shopList.js"></script>
+</body> 
+</html>
